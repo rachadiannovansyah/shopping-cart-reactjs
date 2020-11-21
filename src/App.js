@@ -1,23 +1,15 @@
-import logo from './logo.svg';
+// eslint-disable-entire-file
 import './App.css';
+import ReviewProduk from './Reviews';
+import FotoProduk from '../src/components/FotoProduk';
+import InfoProduk from '../src/components/InfoProduk';
 
-function App() {
+function App() {  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Parentbox">
+      <FotoProduk />
+      <InfoProduk isDiscount="yes" category="Apple" name="Apple MacBook Pro 2020"/>
+      <ReviewProduk />
     </div>
   );
 }
